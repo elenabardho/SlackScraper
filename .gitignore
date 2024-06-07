@@ -1,1 +1,4 @@
 *.env
+results.csv
+results2.csv
+output.txt

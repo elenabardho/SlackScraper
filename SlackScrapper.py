@@ -105,21 +105,21 @@ def add_scores(scoreTable,receiver,recognition):
     
     
     #if recognition.lower() == '#hardwork' and recognitionGiven<=5:
-    if re.search(r'#hardwork',recognition.lower())  and recognitionGiven<=5:
+    if re.search(r'#hardwork',recognition.lower())  and recognitionGiven<=3:
         scoreTable.get(receiver)[0]+=1
         print('Total Scores so far',scoreTable.get(receiver))
         
     #elif recognition.lower() == '#perseverance'  and recognitionGiven<=5:
-    elif re.search(r'#perseverance',recognition.lower())  and recognitionGiven<=5:
+    elif re.search(r'#perseverance',recognition.lower())  and recognitionGiven<=3:
         scoreTable.get(receiver)[1]+=1
         print('Total Scores so far',scoreTable.get(receiver))
    
-    elif re.search(r'#innovation',recognition.lower())  and recognitionGiven<=5:
+    elif re.search(r'#innovation',recognition.lower())  and recognitionGiven<=3:
         scoreTable.get(receiver)[2]+=1
         print('Total Scores so far',scoreTable.get(receiver))
    
     #elif re.search(r"#supporting(?:colleagues|colleague|colleagues\w|-colleagues|-colleagues\w)",recognition.lower()) and recognitionGiven<=5:
-    elif (re.search(r'#supporting(-colleagues?|colleagues?)',recognition.lower()) or recognition.lower() =="#supporting" ) and recognitionGiven<=5:
+    elif (re.search(r'#supporting(-colleagues?|colleagues?)',recognition.lower()) or recognition.lower() =="#supporting" ) and recognitionGiven<=3:
         scoreTable.get(receiver)[3]+=1
         print('Total Scores so far',scoreTable.get(receiver))
     elif recognition.lower() in ['#confidence-booster','#confidencebooster','#confidence'] and recognitionGiven<=5:

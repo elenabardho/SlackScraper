@@ -1,6 +1,5 @@
 *.env
-results.csv
-results2.csv
+*.csv
 output.txt
 
 # Byte-compiled / optimized / DLL files
